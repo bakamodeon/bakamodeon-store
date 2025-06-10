@@ -1,30 +1,96 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <meta charset="UTF-8">
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <meta name="description" content="Baka Mode On – Bold anime T-shirts made for fans who live otaku. Shop shonen, kawaii, and villain drip.">
-  <meta property="og:title" content="Baka Mode On">
+  <meta property="og:title" content="Baka Mode On – Anime Streetwear">
   <meta property="og:description" content="Switch your anime drip ON.">
   <meta property="og:image" content="https://bakamodeon-store.vercel.app/images/preview.jpg">
   <meta name="keywords" content="anime t-shirts, otaku fashion, manga clothing, anime merch India, Baka Mode On">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Baka Mode On</title>
+
+  <title>Baka Mode On | Anime Streetwear</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
-<body class="bg-black text-white font-sans text-center">
-  <h1 class="text-4xl font-bold my-6">Baka Mode: ON</h1>
-  <nav>
-    <a href="index.html" class="mx-2">Home</a>
-    <a href="shop.html" class="mx-2">Shop</a>
-    <a href="contact.html" class="mx-2">Contact</a>
+<body class="bg-black text-white font-sans">
+
+  <!-- ✅ Navigation -->
+  <nav class="flex justify-between items-center bg-zinc-900 px-4 py-4 sm:px-6">
+    <a href="index.html" class="text-xl sm:text-2xl font-bold text-yellow-400">Baka Mode On</a>
+    <div class="space-x-4 text-sm sm:text-base">
+      <a href="index.html" class="text-yellow-400 font-semibold">Home</a>
+      <a href="shop.html" class="hover:text-yellow-400 transition">Shop</a>
+      <a href="contact.html" class="hover:text-yellow-400 transition">Contact</a>
+    </div>
   </nav>
-  <main class="my-20">
-    <h2 class="text-2xl mb-6">Your Anime Drip Starts Here</h2>
-    <a href="shop.html" class="bg-yellow-400 text-black px-6 py-3 rounded-full">Shop Now</a>
-  </main>
-  <script src="js/main.js"></script>
+
+  <!-- ✅ Hero Section -->
+  <section class="bg-cover bg-center min-h-[90vh] flex flex-col justify-center items-center text-center px-4 sm:px-6" style="background-image: url('images/hero-bg.png');">
+    <div class="bg-black/60 p-6 rounded-md max-w-xl w-full">
+      <h1 class="text-4xl sm:text-5xl font-extrabold text-yellow-400 drop-shadow-md leading-tight">Anime Drip Starts Here</h1>
+      <p class="text-white text-base sm:text-lg mt-4">From Shonen to Kawaii, rep your vibe like a true main character.</p>
+      <a href="shop.html" class="mt-6 inline-block bg-yellow-400 text-black px-6 py-3 rounded-full font-semibold hover:bg-yellow-300 transition">Shop Collection</a>
+    </div>
+  </section>
+
+  <!-- ✅ Featured Products -->
+  <section class="py-16 px-4 sm:px-6 text-center">
+    <h2 class="text-2xl sm:text-3xl font-bold mb-10">🔥 Best Sellers</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+
+      <!-- Product 1 -->
+      <div class="bg-zinc-900 p-6 rounded-xl hover:scale-105 transition-transform">
+        <img src="images/shonen-tee.png" alt="Shonen Hero Tee" class="w-full rounded mb-4">
+        <h3 class="text-lg sm:text-xl text-yellow-400 font-bold">Shonen Hero Tee</h3>
+        <p class="text-sm text-gray-300 mt-2 mb-4">Main character mode activated.</p>
+        <a href="shop.html" class="text-sm text-black font-bold bg-yellow-400 px-4 py-2 rounded-full hover:bg-yellow-300 transition">View</a>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="bg-zinc-900 p-6 rounded-xl hover:scale-105 transition-transform">
+        <img src="images/villain-core.png" alt="Villain-Core Tee" class="w-full rounded mb-4">
+        <h3 class="text-lg sm:text-xl text-yellow-400 font-bold">Villain-Core Tee</h3>
+        <p class="text-sm text-gray-300 mt-2 mb-4">Embrace your glitch side.</p>
+        <a href="shop.html" class="text-sm text-black font-bold bg-yellow-400 px-4 py-2 rounded-full hover:bg-yellow-300 transition">View</a>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="bg-zinc-900 p-6 rounded-xl hover:scale-105 transition-transform">
+        <img src="images/kawaii-drip.png" alt="Kawaii Drip Tee" class="w-full rounded mb-4">
+        <h3 class="text-lg sm:text-xl text-yellow-400 font-bold">Kawaii Drip Tee</h3>
+        <p class="text-sm text-gray-300 mt-2 mb-4">Soft pastel chaos with ✨chibi magic✨.</p>
+        <a href="shop.html" class="text-sm text-black font-bold bg-yellow-400 px-4 py-2 rounded-full hover:bg-yellow-300 transition">View</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ✅ Why Baka Mode On -->
+  <section class="bg-zinc-800 py-16 px-4 sm:px-6 text-center">
+    <h2 class="text-2xl sm:text-3xl font-bold text-yellow-400 mb-10">💥 Why Baka Mode On?</h2>
+    <div class="grid gap-8 sm:grid-cols-3 max-w-6xl mx-auto text-sm sm:text-base text-gray-300">
+      <div>
+        <h3 class="text-lg font-bold text-white mb-2">🧬 Unique Designs</h3>
+        <p>No generic prints. Every tee is an otaku statement.</p>
+      </div>
+      <div>
+        <h3 class="text-lg font-bold text-white mb-2">🚚 Free Shipping</h3>
+        <p>Pan-India delivery, no extra fees ever.</p>
+      </div>
+      <div>
+        <h3 class="text-lg font-bold text-white mb-2">🤝 Otaku-Owned</h3>
+        <p>By fans, for fans. 100% anime-fueled vibes.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ✅ Footer -->
+  <footer class="text-center text-sm text-gray-500 py-6">
+    © 2025 Baka Mode On — All Rights Reserved.
+  </footer>
+
 </body>
 </html>
