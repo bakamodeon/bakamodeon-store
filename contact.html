@@ -4,12 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact | Baka Mode On</title>
+  <meta name="description" content="Reach out to Baka Mode On for orders, feedback, or collabs.">
   <link rel="icon" type="image/x-icon" href="favicon.ico" />
-  <meta name="description" content="Contact Baka Mode On – Questions, collabs, or just wanna say hi? Drop us a message.">
-  <meta property="og:title" content="Contact Baka Mode On">
-  <meta property="og:description" content="Reach out for anything – we’re fans too.">
-  <meta property="og:image" content="https://bakamodeon-store.vercel.app/images/preview.jpg">
-  <meta name="keywords" content="contact, anime support, Baka Mode On, anime merch India">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="css/styles.css" />
 </head>
@@ -17,7 +13,7 @@
 
   <!-- ✅ Navigation -->
   <nav class="flex justify-between items-center bg-zinc-900 px-4 py-4 sm:px-6">
-    <a href="index.html" class="text-xl sm:text-2xl font-bold text-yellow-400 hover:scale-110 transition-transform">Baka Mode On</a>
+    <a href="index.html" class="text-xl sm:text-2xl font-bold text-yellow-400 transition-transform duration-300 hover:scale-110">Baka Mode On</a>
     <div class="space-x-4 text-sm sm:text-base">
       <a href="index.html" class="hover:text-yellow-400">Home</a>
       <a href="shop.html" class="hover:text-yellow-400">Shop</a>
@@ -26,34 +22,30 @@
     </div>
   </nav>
 
-  <!-- ✅ Contact Section -->
+  <!-- ✅ Contact Hero -->
+  <section class="py-16 px-4 sm:px-6 text-center bg-zinc-950">
+    <div class="max-w-2xl mx-auto">
+      <h1 class="text-3xl sm:text-5xl font-extrabold text-yellow-400 mb-4">📬 Contact Us</h1>
+      <p class="text-gray-300 text-sm sm:text-base">Have questions, suggestions, or want to collaborate? We’re here for you. Fill out the form and we'll get back to you ASAP.</p>
+    </div>
+  </section>
+
+  <!-- ✅ Contact Form -->
   <section class="py-20 px-4 sm:px-6 text-center">
-    <h1 class="text-3xl sm:text-4xl font-bold text-yellow-400 mb-4">📬 Contact Us</h1>
-    <p class="text-gray-300 max-w-xl mx-auto mb-10 text-sm sm:text-base">
-      Have questions, collab requests, or just wanna yell "BAKA!" at us? We’re listening.
-    </p>
-
-    <form action="https://formspree.io/f/mwpblden" method="POST" class="max-w-md mx-auto space-y-5 text-left">
-      <div>
-        <label class="block mb-1 text-sm font-medium">Your Name</label>
-        <input type="text" name="name" required placeholder="Enter your name"
-          class="w-full p-3 bg-zinc-800 text-white border border-zinc-700 rounded placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-400" />
-      </div>
-
-      <div>
-        <label class="block mb-1 text-sm font-medium">Email Address</label>
-        <input type="email" name="email" required placeholder="you@example.com"
-          class="w-full p-3 bg-zinc-800 text-white border border-zinc-700 rounded placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-400" />
-      </div>
-
-      <div>
-        <label class="block mb-1 text-sm font-medium">Message</label>
-        <textarea name="message" rows="5" required placeholder="What's up?"
-          class="w-full p-3 bg-zinc-800 text-white border border-zinc-700 rounded placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-400"></textarea>
-      </div>
-
-      <button type="submit"
-        class="w-full bg-yellow-400 text-black font-semibold py-3 rounded-full hover:bg-yellow-300 transition">
+    <form action="https://formspree.io/f/mwpblden" method="POST" class="max-w-md mx-auto space-y-4 text-left">
+      <label class="block">
+        <span class="text-sm text-gray-400">Your Name</span>
+        <input type="text" name="name" required class="w-full mt-1 p-3 rounded bg-zinc-800 text-white placeholder-gray-400 border border-zinc-700" placeholder="e.g. Senpai-chan">
+      </label>
+      <label class="block">
+        <span class="text-sm text-gray-400">Your Email</span>
+        <input type="email" name="email" required class="w-full mt-1 p-3 rounded bg-zinc-800 text-white placeholder-gray-400 border border-zinc-700" placeholder="you@example.com">
+      </label>
+      <label class="block">
+        <span class="text-sm text-gray-400">Your Message</span>
+        <textarea name="message" rows="5" required class="w-full mt-1 p-3 rounded bg-zinc-800 text-white placeholder-gray-400 border border-zinc-700" placeholder="Say hi, ask a question, or drop a collab idea..."></textarea>
+      </label>
+      <button type="submit" class="w-full bg-yellow-400 hover:bg-yellow-300 text-black font-semibold py-3 rounded-full transition duration-300">
         Send Message
       </button>
     </form>
@@ -64,11 +56,15 @@
     © 2025 Baka Mode On — All Rights Reserved.
   </footer>
 
-  <!-- ✅ Optional: Disable Right-Click & Dev Tools -->
+  <!-- ✅ Protect code -->
   <script>
-    document.addEventListener('contextmenu', event => event.preventDefault());
-    document.onkeydown = function (e) {
-      if (e.keyCode == 123 || (e.ctrlKey && e.shiftKey && ['I', 'J'].includes(String.fromCharCode(e.keyCode))) || (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0))) {
+    document.addEventListener('contextmenu', e => e.preventDefault());
+    document.onkeydown = function(e) {
+      if (
+        e.keyCode == 123 || 
+        (e.ctrlKey && e.shiftKey && ['I', 'J'].includes(String.fromCharCode(e.keyCode))) || 
+        (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0))
+      ) {
         return false;
       }
     }

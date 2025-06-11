@@ -5,7 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Art | Baka Mode On</title>
   <meta name="description" content="Explore exclusive anime digital art from Baka Mode On. Buy high-resolution wallpapers in 4K and 1080p.">
-  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <meta name="keywords" content="anime digital art, 4K anime wallpaper, otaku background, Sora image, AI anime art">
+  <meta property="og:title" content="Digital Art – Baka Mode On">
+  <meta property="og:image" content="https://bakamodeon-store.vercel.app/images/preview.jpg">
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="css/styles.css" />
 </head>
@@ -22,7 +25,7 @@
     </div>
   </nav>
 
-  <!-- ✅ Art Hero -->
+  <!-- ✅ Hero Section -->
   <section class="text-center py-16 px-4 sm:px-6 bg-cover bg-center" style="background-image: url('images/art-hero-bg.png');">
     <div class="bg-black/70 p-6 sm:p-10 rounded-lg max-w-3xl mx-auto">
       <h1 class="text-3xl sm:text-5xl font-extrabold text-yellow-400 mb-4">🎨 Exclusive Anime Digital Art</h1>
@@ -30,41 +33,39 @@
     </div>
   </section>
 
-  <!-- ✅ Art Gallery -->
+  <!-- ✅ Art Gallery Section -->
   <section class="py-20 px-4 sm:px-6 text-center">
     <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
 
       <!-- Art 1 -->
       <div class="bg-zinc-900 p-5 rounded-xl shadow hover:scale-105 transition-transform">
-        <img src="images/art-kawaii-girl.png" alt="Kawaii Sora Girl" class="rounded mb-4 w-full h-auto object-cover">
+        <img src="images/art-kawaii-girl.png" alt="Kawaii Sora Girl" class="rounded mb-4 w-full object-cover">
         <h3 class="text-yellow-400 text-lg font-semibold">Kawaii Sora Girl</h3>
         <p class="text-sm text-gray-400 mt-1 mb-4">Soft & pastel. Download 4K / 1080p</p>
-        <a href="https://payhip.com/b/YOUR_LINK_1" target="_blank"
+        <a href="https://payhip.com/b/Snxf8" target="_blank"
           class="inline-block bg-yellow-400 text-black font-bold px-5 py-2 rounded-full hover:bg-yellow-300 transition">
           Buy Now ₹49
         </a>
       </div>
 
-      <!-- Art 2 -->
-      <div class="bg-zinc-900 p-5 rounded-xl shadow hover:scale-105 transition-transform">
-        <img src="images/art-villain-drift.png" alt="Glitch Villain" class="rounded mb-4 w-full h-auto object-cover">
-        <h3 class="text-yellow-400 text-lg font-semibold">Glitch Villain</h3>
-        <p class="text-sm text-gray-400 mt-1 mb-4">Dark mode energy. 4K / 1080p</p>
-        <a href="https://payhip.com/b/YOUR_LINK_2" target="_blank"
-          class="inline-block bg-yellow-400 text-black font-bold px-5 py-2 rounded-full hover:bg-yellow-300 transition">
-          Buy Now ₹49
-        </a>
+      <!-- Art 2 (Placeholder) -->
+      <div class="bg-zinc-900 p-5 rounded-xl shadow hover:scale-105 transition-transform opacity-40 hover:opacity-100 transition-opacity">
+        <img src="images/art-villain-drift.png" alt="Coming Soon" class="rounded mb-4 w-full object-cover">
+        <h3 class="text-yellow-400 text-lg font-semibold">Coming Soon</h3>
+        <p class="text-sm text-gray-400 mt-1 mb-4">Stay tuned for new art drops!</p>
+        <button disabled class="inline-block bg-zinc-700 text-white font-bold px-5 py-2 rounded-full cursor-not-allowed">
+          Coming Soon
+        </button>
       </div>
 
-      <!-- Art 3 -->
-      <div class="bg-zinc-900 p-5 rounded-xl shadow hover:scale-105 transition-transform">
-        <img src="images/art-shonen-blaze.jpg" alt="Shonen Blaze" class="rounded mb-4 w-full h-auto object-cover">
-        <h3 class="text-yellow-400 text-lg font-semibold">Shonen Blaze</h3>
-        <p class="text-sm text-gray-400 mt-1 mb-4">Fiery spirit. 4K / 1080p</p>
-        <a href="https://payhip.com/b/YOUR_LINK_3" target="_blank"
-          class="inline-block bg-yellow-400 text-black font-bold px-5 py-2 rounded-full hover:bg-yellow-300 transition">
-          Buy Now ₹49
-        </a>
+      <!-- Art 3 (Placeholder) -->
+      <div class="bg-zinc-900 p-5 rounded-xl shadow hover:scale-105 transition-transform opacity-40 hover:opacity-100 transition-opacity">
+        <img src="images/art-shonen-blaze.jpg" alt="Coming Soon" class="rounded mb-4 w-full object-cover">
+        <h3 class="text-yellow-400 text-lg font-semibold">Coming Soon</h3>
+        <p class="text-sm text-gray-400 mt-1 mb-4">More anime wallpapers coming soon!</p>
+        <button disabled class="inline-block bg-zinc-700 text-white font-bold px-5 py-2 rounded-full cursor-not-allowed">
+          Coming Soon
+        </button>
       </div>
 
     </div>
@@ -75,13 +76,15 @@
     © 2025 Baka Mode On — All Rights Reserved.
   </footer>
 
+  <!-- ✅ Anti-copy Protection -->
   <script>
-    // Disable right-click and F12
     document.addEventListener('contextmenu', e => e.preventDefault());
     document.onkeydown = function (e) {
-      if (e.keyCode == 123 || (e.ctrlKey && e.shiftKey && ['I', 'J'].includes(String.fromCharCode(e.keyCode))) || (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0))) {
-        return false;
-      }
+      if (
+        e.keyCode == 123 || 
+        (e.ctrlKey && e.shiftKey && ['I', 'J'].includes(String.fromCharCode(e.keyCode))) || 
+        (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0))
+      ) return false;
     }
   </script>
 
