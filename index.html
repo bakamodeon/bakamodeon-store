@@ -125,6 +125,14 @@
   <footer class="text-center text-sm text-gray-500 py-6 bg-black border-t border-zinc-800">
     © 2025 Baka Mode On — All Rights Reserved.
   </footer>
-
+  <script>
+    document.addEventListener('contextmenu', event => event.preventDefault());
+    document.onkeydown = function(e) {
+      if (e.keyCode == 123 || (e.ctrlKey && e.shiftKey && (e.keyCode == 'I'.charCodeAt(0) || e.keyCode == 'J'.charCodeAt(0))) || (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0))) {
+        return false;
+      }
+    }
+  </script>
+  
 </body>
 </html>
