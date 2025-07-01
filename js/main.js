@@ -5,3 +5,5 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
       document.querySelector(link.getAttribute('href')).scrollIntoView({behavior: 'smooth'});
     });
   });
+
+  import { SpeedInsights } from "@vercel/speed-insights/next"
